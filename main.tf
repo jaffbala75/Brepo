@@ -27,7 +27,7 @@ resource "aws_instance" "vm1" {
 resource "null_resource" "vm1" {
   count = 1
 
-  triggers = {
-    password = "${rsadecrypt(aws_instance.vm1.*.password_data[count.index], file("tkey.pem"))}"
-  }
+ # triggers = {
+ #   password = "${rsadecrypt(aws_instance.vm1.*.password_data[count.index], file("tkey.pem"))}"
+ # }
 }
