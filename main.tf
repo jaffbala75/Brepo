@@ -20,7 +20,7 @@ resource "aws_instance" "vm1" {
   associate_public_ip_address = true
   key_name                    = "tkey"
   security_groups             = ["sg-06c31a4f30402c865"]
-  user_data                   = file("./ntlm_enable.bat")
+  #user_data                   = file("./ntlm_enable.bat")
   get_password_data           = true
 }
 
