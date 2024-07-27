@@ -1,4 +1,4 @@
-variable "aws_access_key_id" {
+/*variable "aws_access_key_id" {
   description = "Initial AWS IAM user access key ID"
   type        = string
 }
@@ -7,7 +7,6 @@ variable "aws_secret_access_key" {
   description = "Initial AWS IAM secret access key"
   type        = string
 }
-/*
 variable "aws_iam_username" {
   description = "AWS IAM username for which access keys will be rotated"
   type        = string
